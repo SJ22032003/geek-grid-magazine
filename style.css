@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Baskervville:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Baskervville:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: #fff;
+  background-color: rgb(20, 30, 40);
+}
+/* 
+section {
+  border: 2px solid yellow;
+} */
+
+main {
+  min-height: inherit;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  /* border: 2px solid red; */
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+.top-section {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+
+    & > img {
+      width: 100%;
+      justify-self: center;
+    }
+
+    & > h1 {
+      font-family: Anton, sans-serif;
+      font-size: 5rem;
+      color: orangered;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    & > p {
+      font-size: 2rem;
+      text-align: center;
+      color: orangered;
+      font-family: "Baskervville", serif;
+    }
+  }
+
+  .author {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Raleway", sans-serif;
+
+    .author-about {
+      & > h3 {
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+      & > p {
+        color: gray;
+        font-size: 1.2rem;
+      }
+    }
+
+    .author-social {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.middle-section {
+
+  column-width: 20rem;
+  font-family: "Baskervville", serif;
+  color: linen;
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  text-align: justify;
+
+  & > p {
+    margin: 0.8rem;
+  }
+
+  & > blockquote {
+    & > hr {
+      color: gray
+    }
+    & > p {
+      margin: 20px;
+      color: #00beef;
+      font-size: 1.5rem;
+    }
+  }
+
+  
+  .para-1::first-letter {
+    color: orangered;
+    float: left;
+    font-size: 6rem;
+    margin-right: 0.5rem;
+  }
+
+}
